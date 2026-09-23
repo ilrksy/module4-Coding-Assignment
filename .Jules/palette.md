@@ -1,0 +1,3 @@
+## 2024-03-21 - Added accessibility landmarks and mobile viewport
+**Learning:** Found that this project lacked a mobile viewport tag, leading to poor text scaling on mobile devices. It also lacked semantic landmarks (like `<main>`) for screen readers.
+**Action:** Always check the basic HTML shell of an application for `<meta name="viewport">` and semantic elements. Added to this project to improve usability and a11y.
