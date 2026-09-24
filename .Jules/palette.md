@@ -1,0 +1,3 @@
+## 2026-09-24 - [Add Mobile Viewport & Main Landmark]
+**Learning:** Found that this vanilla app lacked basic mobile responsiveness and accessibility landmarks out of the box, demonstrating a recurring pattern where plain JS/HTML projects skip modern boilerplate tags.
+**Action:** Always verify presence of `<meta name="viewport">` and `<main>` tags on legacy or simple index.html pages as an easy accessibility win.
