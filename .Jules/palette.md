@@ -1,0 +1,3 @@
+## 2024-05-24 - Surfacing Console Output to the DOM
+**Learning:** Console-only output is inherently inaccessible to many users, including those using screen readers (which typically don't read developer tools) and mobile users (who often have no access to a console at all). Relying on the console for primary application output creates a significant accessibility barrier.
+**Action:** When a learning exercise or basic script uses `console.log` for its primary output, always consider mirroring that output to the DOM, ideally utilizing semantic lists (like `<ul>`/`<li>`) and an `aria-live` region so screen readers are notified of dynamically added content.
