@@ -1,0 +1,3 @@
+## 2024-05-19 - Screen-reader access for dynamic console logs
+**Learning:** When core application output is sent only to `console.log`, non-technical users and screen readers are completely locked out of the experience.
+**Action:** Always replicate or redirect critical `console.log` output to a semantic DOM element (e.g., `<div aria-live="polite">`) to ensure accessibility for all users, particularly in simple vanilla JS learning exercises where no UI is initially provided.
