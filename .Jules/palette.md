@@ -1,0 +1,3 @@
+## 2026-10-01 - [Surface console output to the UI for better accessibility]
+**Learning:** For a simple JS app requiring console viewing, it poses a severe barrier to non-technical users and those relying on assistive technologies. Adding the output to an `aria-live` region significantly improves usability.
+**Action:** Always consider echoing important developer-only outputs (like `console.log`) to the DOM if the main interaction flow depends on seeing those outputs, especially in simple single-page non-framework applications. Ensure it's wrapped in a semantic layout and `aria-live` region so screen readers catch dynamic updates.
