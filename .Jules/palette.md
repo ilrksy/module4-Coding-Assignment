@@ -1,0 +1,3 @@
+## 2024-05-17 - HTML5 Boilerplate Accessibility
+**Learning:** Found an app missing a mobile viewport meta tag and structural landmarks (`<main>`). Without the viewport tag, text can be too small on mobile. Without `<main>`, screen reader users lack an easy way to jump to the primary content of the page.
+**Action:** Always ensure foundational HTML5 accessibility features (viewport meta tags, semantic landmarks) are present before focusing on component-level polish, as they drastically affect baseline usability.
