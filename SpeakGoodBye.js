@@ -5,7 +5,15 @@
 var SpeakGoodBye = (function () {
 
     function speak(name) {
-        console.log('Goodbye ' + name);
+        var msg = 'Goodbye ' + name;
+        console.log(msg);
+
+        var outputDiv = document.getElementById('output');
+        if (outputDiv) {
+            var p = document.createElement('p');
+            p.textContent = msg;
+            outputDiv.appendChild(p);
+        }
     }
 
     // Expose "speak" to the outside world; everything else stays private.
