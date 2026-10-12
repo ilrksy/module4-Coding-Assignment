@@ -6,6 +6,12 @@ var SpeakGoodBye = (function () {
 
     function speak(name) {
         console.log('Goodbye ' + name);
+        var outputList = document.getElementById('output-list');
+        if (outputList) {
+            var listItem = document.createElement('li');
+            listItem.textContent = 'Goodbye ' + name;
+            outputList.appendChild(listItem);
+        }
     }
 
     // Expose "speak" to the outside world; everything else stays private.
